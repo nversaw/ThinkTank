@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<%@ Page Language="C#" inherits="Microsoft.SharePoint.WebPartPages.WebPartPage, Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register tagprefix="SharePoint" namespace="Microsoft.SharePoint.WebControls" assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register tagprefix="WebPartPages" namespace="Microsoft.SharePoint.WebPartPages" assembly="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register tagprefix="WebUI" namespace="Microsoft.Office.Excel.WebUI" assembly="Microsoft.Office.Excel.WebUI, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head runat="server">
+<meta name="WebPartPageExpansion" content="full" />
+<meta name="ProgId" content="SharePoint.WebPartPage.Document" />
+<meta http-equiv="X-UA-Compatible" content="IE=10" />
+<SharePoint:CssRegistration Name="default" runat="server"/>
+<!--[if gte mso 9]>
+<SharePoint:CTFieldRefs runat=server Prefix="mso:" FieldList="FileLeafRef,WikiField,_dlc_DocId,_dlc_DocIdUrl,_dlc_DocIdPersistId"><xml>
+	
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">TPVHAX7F3YWN-161-35</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">37c65c9e-a17d-4136-bb47-974755c6d54a</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/CC/OpSupport/_layouts/15/DocIdRedir.aspx?ID=TPVHAX7F3YWN-161-35, TPVHAX7F3YWN-161-35</mso:_dlc_DocIdUrl>
+</mso:CustomDocumentProperties>
+</xml></SharePoint:CTFieldRefs><![endif]-->
+<link rel="stylesheet" type="text/css" href="../SiteAssets/CIStyle.css" />
+<title>Think Tank</title>
+</head>
+<body>
+	<form id="form1" runat="server">
+		<WebPartPages:SPWebPartManager runat="server" id="SPWebPartManager">
+		</WebPartPages:SPWebPartManager>
+	<div id="MainHeader">
+		<div id="HeaderWrap"><h1 id="SiteHeader"><img src="https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/CC/OpSupport/SiteAssets/Images/CI/ThinkTank.png" /></h1><a href="https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/SitePages/Home.aspx" id="HomeBtn"></a></div>
+		</div>
+	<div id="MainWrap">
+		<div id="DescriptionWrap">
+		<div id="DescripSection">
+			<p id="DescripText">
+				Continuous Improvement: An ongoing effort to incrementally improve services and processes in order to meet the needs of the customer (including upstream and downstream departments/systems) reducing non-value added activities and increasing value added activity standardization.
+			</p>
+		</div>	
+		</div>
+		<div id="BtnSection">
+			<div id="BtnWrap">
+				<div id="Btns">
+					<a href="https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/CC/OpSupport/Lists/CI/NewImprovement.aspx?Source=https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/CC/OpSupport/SitePages/Thanks.aspx" id="ImprovementBtn" class="BtnStyle">Submit an Improvement</a>
+					<!--<a href="https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/CC/OpSupport/_layouts/15/start.aspx#/Lists/CI/NewForm.aspx?Source=https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/CC/OpSupport/SitePages/Thanks.aspx" id="InitiativeBtn" class="BtnStyle">Submit a Rework Improvement</a>-->
+				</div>
+			</div>
+			<div id="BtnDescripWrap">
+				<div id="BtnDescripBckgrd">
+						<div id="themeWrap"><img id="themeImg" class="animateEle" src="https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/CC/OpSupport/SiteAssets/Images/CI/imprvTheme.png" /></div>
+						<div id="cntrInitiativeTxt">In order to align with center directives, each quarter the Continuous Improvement team will host a building wide brainstorm event.
+						Event will be open for 45 days.  Solutions are welcome but not mandatory.  Everyone who enters will be recognized. 
+						Theme for this quarter is: “Rework”  <br/><br/>
+						<a id="themeLink" href="https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/CC/OpSupport/_layouts/15/start.aspx#/Lists/CI/NewForm.aspx?Source=https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/CC/OpSupport/SitePages/Thanks.aspx">Click here to submit your rework improvements!</a>
+					</div>
+				</div>
+			</div>
+			<div id="ViewSection">
+				<div id="ViewWrap">
+					<a href="https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/CC/OpSupport/_layouts/15/start.aspx#/Lists/CI/AllItems.aspx" class="BtnStyle3">View All Improvements</a>
+					<a href="https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/CC/OpSupport/_layouts/15/start.aspx#/Lists/CI/MyImprovements.aspx" class="BtnStyle3">View My Improvements</a>
+					<a href="https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/CC/OpSupport/_layouts/15/start.aspx#/Lists/CI/MyOpenImprovements.aspx" class="BtnStyle3">View My Open Improvements</a>
+					<a href="https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/CC/OpSupport/_layouts/15/start.aspx#/Lists/CI/ImprovementsByDirector.aspx" class="BtnStyle3">Improvements By Director</a>
+					<a href="https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/CC/OpSupport/_layouts/15/start.aspx#/Lists/CI/ManagerView.aspx" class="BtnStyle4">Manager View</a>
+				</div>
+			</div>
+		</div>
+		<div id="BtmWrap">
+		<div id="TopGrayBar"></div>
+		<div id="BtmSection">
+			<div id="CenterGraySection">
+				<div id="Column1">				
+				<div class="container">
+					<ul class="tabs">
+						<li class="tab-link current" data-tab="tab-1">Engagement</li>
+						<li class="tab-link" data-tab="tab-2">Time Savings</li>
+						<!--<li class="tab-link" data-tab="tab-3">Center Initiative</li>-->
+						<li class="tab-link" data-tab="tab-4">Cost Savings</li>
+					</ul>
+					<div id="tab-1" class="tab-content current">
+						<WebUI:ExcelWebRenderer runat="server" WorkbookUri="https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/CC/OpSupport/Shared%20Documents/Think%20Tank%20Dashboard.xlsx" VisibleItem="Chart 4" AutoGenerateTitle="False" AutoGenerateDetailLink="False" ToolbarStyle="None" AllowInExcelOperations="False" ShowVisibleItemButton="False" AllowHyperlinks="False" AllowInteractivity="False" Title="Excel Web Access" TitleUrl="/sites/SPOStdControllers/JCPSSC/CC/OpSupport/_layouts/15/WopiFrame.aspx?sourcedoc={aac0d167-9d50-44e5-9c6e-cf486d0bf031}&amp;action=view&amp;wdSource=http%3A%2F%2Fjcp%2Esharepoint%2Ecom%2F%5Flayouts%2F15%2Ftoolpane%2Easpx&amp;wdEWRClick=true&amp;Source=http%3A%2F%2Fjcp%2Esharepoint%2Ecom%2F%5Flayouts%2F15%2Ftoolpane%2Easpx&amp;item=Chart%204" FrameType="None" SuppressWebPartChrome="False" Description="$Resources:xlsrv,dwp-description;" IsIncluded="True" ZoneID="ImportedPartZone" PartOrder="0" FrameState="Normal" AllowRemove="True" AllowZoneChange="True" AllowMinimize="True" AllowConnect="True" AllowEdit="True" AllowHide="True" IsVisible="True" CatalogIconImageUrl="/_layouts/15/images/ewr023.gif" TitleIconImageUrl="/_layouts/15/images/ewr023.gif" DetailLink="/sites/SPOStdControllers/JCPSSC/CC/OpSupport/_layouts/15/WopiFrame.aspx?sourcedoc={aac0d167-9d50-44e5-9c6e-cf486d0bf031}&amp;action=view&amp;wdSource=http%3A%2F%2Fjcp%2Esharepoint%2Ecom%2F%5Flayouts%2F15%2Ftoolpane%2Easpx&amp;wdEWRClick=true&amp;Source=http%3A%2F%2Fjcp%2Esharepoint%2Ecom%2F%5Flayouts%2F15%2Ftoolpane%2Easpx&amp;item=Chart%204" HelpLink="" HelpMode="Modeless" Dir="Default" PartImageSmall="/_layouts/15/images/ewr023.gif" MissingAssembly="Cannot import this Web Part." PartImageLarge="/_layouts/15/images/ewr023.gif" IsIncludedFilter="" ExportControlledProperties="True" ConnectionID="00000000-0000-0000-0000-000000000000" ID="g_d2720bff_922d_4a68_9b44_982a077ab645" ChromeType="None" ExportMode="All" EnableViewState="False" __MarkupType="vsattributemarkup" __WebPartId="{d2720bff-922d-4a68-9b44-982a077ab645}" WebPart="true" Height="450px" Width=""></WebUI:ExcelWebRenderer>
+					
+					</div>				
+					<div id="tab-2" class="tab-content">
+						<WebUI:ExcelWebRenderer runat="server" WorkbookUri="https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/CC/OpSupport/Shared%20Documents/Think%20Tank%20Dashboard.xlsx" VisibleItem="Chart 1" ToolbarStyle="None" Title="Excel Web Access" TitleUrl="https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/CC/OpSupport/_layouts/15/WopiFrame.aspx?sourcedoc={aac0d167-9d50-44e5-9c6e-cf486d0bf031}&amp;action=view&amp;wdSource=http%3A%2F%2Fjcp%2Esharepoint%2Ecom%2F%5Flayouts%2F15%2Ftoolpane%2Easpx&amp;wdEWRClick=true&amp;Source=http%3A%2F%2Fjcp%2Esharepoint%2Ecom%2F%5Flayouts%2F15%2Ftoolpane%2Easpx&amp;item=Chart%201" FrameType="BorderOnly" SuppressWebPartChrome="False" Description="$Resources:xlsrv,dwp-description;" IsIncluded="True" ZoneID="ImportedPartZone" PartOrder="0" FrameState="Normal" AllowRemove="True" AllowZoneChange="True" AllowMinimize="True" AllowConnect="True" AllowEdit="True" AllowHide="True" IsVisible="True" CatalogIconImageUrl="/_layouts/15/images/ewr023.gif" TitleIconImageUrl="/_layouts/15/images/ewr023.gif" DetailLink="https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/CC/OpSupport/_layouts/15/WopiFrame.aspx?sourcedoc={aac0d167-9d50-44e5-9c6e-cf486d0bf031}&amp;action=view&amp;wdSource=http%3A%2F%2Fjcp%2Esharepoint%2Ecom%2F%5Flayouts%2F15%2Ftoolpane%2Easpx&amp;wdEWRClick=true&amp;Source=http%3A%2F%2Fjcp%2Esharepoint%2Ecom%2F%5Flayouts%2F15%2Ftoolpane%2Easpx&amp;item=Chart%201" HelpLink="" HelpMode="Modeless" Dir="Default" PartImageSmall="/_layouts/15/images/ewr023.gif" MissingAssembly="Cannot import this Web Part." PartImageLarge="/_layouts/15/images/ewr023.gif" IsIncludedFilter="" ExportControlledProperties="True" ConnectionID="00000000-0000-0000-0000-000000000000" ID="g_28222b22_d682_4dc2_9313_520beb75bc01" ChromeType="BorderOnly" ExportMode="All" EnableViewState="False" __MarkupType="vsattributemarkup" __WebPartId="{28222b22-d682-4dc2-9313-520beb75bc01}" WebPart="true" Height="450px" Width=""></WebUI:ExcelWebRenderer>
+					</div>
+					<!--<div id="tab-3" class="tab-content">
+						<WebUI:ExcelWebRenderer runat="server" WorkbookUri="https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/CC/OpSupport/Shared%20Documents/Think%20Tank%20Dashboard.xlsx" VisibleItem="Chart 2" ToolbarStyle="None" Title="Excel Web Access" TitleUrl="https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/CC/OpSupport/_layouts/15/WopiFrame.aspx?sourcedoc={aac0d167-9d50-44e5-9c6e-cf486d0bf031}&amp;action=view&amp;wdSource=http%3A%2F%2Fjcp%2Esharepoint%2Ecom%2F%5Flayouts%2F15%2Ftoolpane%2Easpx&amp;wdEWRClick=true&amp;Source=http%3A%2F%2Fjcp%2Esharepoint%2Ecom%2F%5Flayouts%2F15%2Ftoolpane%2Easpx&amp;item=Chart%202" FrameType="BorderOnly" SuppressWebPartChrome="False" Description="$Resources:xlsrv,dwp-description;" IsIncluded="True" ZoneID="ImportedPartZone" PartOrder="0" FrameState="Normal" AllowRemove="True" AllowZoneChange="True" AllowMinimize="True" AllowConnect="True" AllowEdit="True" AllowHide="True" IsVisible="True" CatalogIconImageUrl="/_layouts/15/images/ewr023.gif" TitleIconImageUrl="/_layouts/15/images/ewr023.gif" DetailLink="https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/CC/OpSupport/_layouts/15/WopiFrame.aspx?sourcedoc={aac0d167-9d50-44e5-9c6e-cf486d0bf031}&amp;action=view&amp;wdSource=http%3A%2F%2Fjcp%2Esharepoint%2Ecom%2F%5Flayouts%2F15%2Ftoolpane%2Easpx&amp;wdEWRClick=true&amp;Source=http%3A%2F%2Fjcp%2Esharepoint%2Ecom%2F%5Flayouts%2F15%2Ftoolpane%2Easpx&amp;item=Chart%202" HelpLink="" HelpMode="Modeless" Dir="Default" PartImageSmall="/_layouts/15/images/ewr023.gif" MissingAssembly="Cannot import this Web Part." PartImageLarge="/_layouts/15/images/ewr023.gif" IsIncludedFilter="" ExportControlledProperties="True" ConnectionID="00000000-0000-0000-0000-000000000000" ID="g_ea85ce08_afe6_479d_a758_9f647ae4fa1c" ChromeType="BorderOnly" ExportMode="All" EnableViewState="False" __MarkupType="vsattributemarkup" __WebPartId="{ea85ce08-afe6-479d-a758-9f647ae4fa1c}" WebPart="true" Height="450px" Width="" __designer:Preview="&lt;img src=&quot;https://jcp.sharepoint.com/_layouts/15/1033/images/ewr136.png?rev=4uFUm2emZ%2BUxd%2FXTTj73SA%3D%3DTAG87&quot; alt=&quot;Excel Web Access&quot; /&gt;" __designer:Values="&lt;P N=&#39;WorkbookUri&#39; T=&#39;https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/CC/OpSupport/Shared%20Documents/Think%20Tank%20Dashboard.xlsx&#39; /&gt;&lt;P N=&#39;VisibleItem&#39; T=&#39;Chart 2&#39; /&gt;&lt;P N=&#39;ToolbarStyle&#39; E=&#39;3&#39; /&gt;&lt;P N=&#39;TitleUrl&#39; ID=&#39;1&#39; T=&#39;https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/CC/OpSupport/_layouts/15/WopiFrame.aspx?sourcedoc={aac0d167-9d50-44e5-9c6e-cf486d0bf031}&amp;amp;action=view&amp;amp;wdSource=https%3A%2F%2Fjcp%2Esharepoint%2Ecom%2F%5Fvti%5Fbin%2Fwebpartpages%2Easmx&amp;amp;wdEWRClick=true&amp;amp;Source=https%3A%2F%2Fjcp%2Esharepoint%2Ecom%2F%5Fvti%5Fbin%2Fwebpartpages%2Easmx&amp;amp;item=Chart%202&#39; /&gt;&lt;P N=&#39;FrameType&#39; E=&#39;4&#39; /&gt;&lt;P N=&#39;Description&#39; T=&#39;$Resources:xlsrv,dwp-description;&#39; /&gt;&lt;P N=&#39;ZoneID&#39; T=&#39;ImportedPartZone&#39; /&gt;&lt;P N=&#39;Height&#39; T=&#39;450px&#39; /&gt;&lt;P N=&#39;CatalogIconImageUrl&#39; ID=&#39;2&#39; T=&#39;/_layouts/15/images/ewr023.gif&#39; /&gt;&lt;P N=&#39;TitleIconImageUrl&#39; R=&#39;2&#39; /&gt;&lt;P N=&#39;DetailLink&#39; R=&#39;1&#39; /&gt;&lt;P N=&#39;PartImageSmall&#39; R=&#39;2&#39; /&gt;&lt;P N=&#39;PartImageLarge&#39; R=&#39;2&#39; /&gt;&lt;P N=&#39;ID&#39; ID=&#39;3&#39; T=&#39;g_ea85ce08_afe6_479d_a758_9f647ae4fa1c&#39; /&gt;&lt;P N=&#39;Qualifier&#39; R=&#39;3&#39; /&gt;&lt;P N=&#39;ClientName&#39; T=&#39;varPartg_ea85ce08_afe6_479d_a758_9f647ae4fa1c&#39; /&gt;&lt;P N=&#39;EffectiveFrameType&#39; E=&#39;4&#39; /&gt;&lt;P N=&#39;ChromeType&#39; E=&#39;4&#39; /&gt;&lt;P N=&#39;ExportMode&#39; E=&#39;1&#39; /&gt;&lt;P N=&#39;Height&#39; T=&#39;450px&#39; /&gt;&lt;P N=&#39;WebBrowsableObject&#39; R=&#39;0&#39; /&gt;&lt;P N=&#39;EnableViewState&#39; T=&#39;False&#39; /&gt;&lt;P N=&#39;Page&#39; ID=&#39;4&#39; /&gt;&lt;P N=&#39;TemplateControl&#39; R=&#39;4&#39; /&gt;&lt;P N=&#39;AppRelativeTemplateSourceDirectory&#39; R=&#39;-1&#39; /&gt;"></WebUI:ExcelWebRenderer>
+					</div>-->
+					<div id="tab-4" class="tab-content">
+						<WebPartPages:WebPartZone id="g_6F2C8E90198A4976AE1F0B06034CCD04" runat="server" title="Zone 1"><ZoneTemplate>
+						<WebUI:ExcelWebRenderer runat="server" WorkbookUri="https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/CC/OpSupport/Shared Documents/Think Tank Dashboard.xlsx" VisibleItem="Chart 3" AutoGenerateTitle="False" AutoGenerateDetailLink="False" ToolbarStyle="None" AllowHyperlinks="False" ShowAgaveTaskPanes="True" Title="Dashboard" TitleUrl="/sites/SPOStdControllers/JCPSSC/CC/OpSupport/_layouts/15/WopiFrame.aspx?sourcedoc={aac0d167-9d50-44e5-9c6e-cf486d0bf031}&amp;action=view&amp;wdSource=http%3A%2F%2Fjcp%2Esharepoint%2Ecom%2F%5Flayouts%2F15%2Ftoolpane%2Easpx&amp;wdEWRClick=true&amp;Source=http%3A%2F%2Fjcp%2Esharepoint%2Ecom%2F%5Flayouts%2F15%2Ftoolpane%2Easpx&amp;item=Chart%203" FrameType="BorderOnly" SuppressWebPartChrome="False" Description="Use the Excel Web Access Web Part to interact with an Excel workbook as a Web page." IsIncluded="True" ZoneID="g_6F2C8E90198A4976AE1F0B06034CCD04" PartOrder="2" FrameState="Normal" AllowRemove="True" AllowZoneChange="True" AllowMinimize="True" AllowConnect="True" AllowEdit="True" AllowHide="True" IsVisible="True" CatalogIconImageUrl="/_layouts/15/images/ewr023.gif" TitleIconImageUrl="/_layouts/15/images/ewr023.gif" DetailLink="/sites/SPOStdControllers/JCPSSC/CC/OpSupport/_layouts/15/WopiFrame.aspx?sourcedoc={aac0d167-9d50-44e5-9c6e-cf486d0bf031}&amp;action=view&amp;wdSource=http%3A%2F%2Fjcp%2Esharepoint%2Ecom%2F%5Flayouts%2F15%2Ftoolpane%2Easpx&amp;wdEWRClick=true&amp;Source=http%3A%2F%2Fjcp%2Esharepoint%2Ecom%2F%5Flayouts%2F15%2Ftoolpane%2Easpx&amp;item=Chart%203" HelpLink="" HelpMode="Modeless" Dir="Default" PartImageSmall="/_layouts/15/images/ewr023.gif" MissingAssembly="Cannot import this Web Part." PartImageLarge="/_layouts/15/images/ewr023.gif" IsIncludedFilter="" ExportControlledProperties="True" ConnectionID="00000000-0000-0000-0000-000000000000" ID="g_a5fa5ab5_a4a5_4a7c_a815_5fafdb746f6f" ChromeType="BorderOnly" ExportMode="All" EnableViewState="False" __MarkupType="vsattributemarkup" __WebPartId="{A5FA5AB5-A4A5-4A7C-A815-5FAFDB746F6F}" WebPart="true" Height="450px" Width=""></WebUI:ExcelWebRenderer>
+
+</ZoneTemplate></WebPartPages:WebPartZone>	
+					</div>				
+				</div>								
+				</div>
+				<div id="Column2">
+					<a href="https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/CC/OpSupport/SitePages/UnderConstruction.aspx" id="ReportingBtn" class="GryBtn">Reporting</a>
+					<a href="http://jsharefinsupsvc.jcpenney.com/Controllers/JCPSSC/OpExcellence/ProjectCentral/Lists/Process%20Inventory/ByOrganization.aspx" id="ProcessInventoryBtn" class="GryBtn">Process Inventory</a>
+					<a href="http://jsharefinsupsvc.jcpenney.com/Controllers/JCPSSC/OpExcellence/ProjectCentral/Standard%20Operating%20Procedures%20SOP/Forms/AllItems.aspx" id="SOPBtn" class="GryBtn">SOP Library</a>
+				</div>			
+			</div>		
+		</div>
+		</div>
+	</div>
+	</form>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+	
+	$('ul.tabs li').click(function(){
+		var tab_id = $(this).attr('data-tab');
+
+		$('ul.tabs li').removeClass('current');
+		$('.tab-content').removeClass('current');
+
+		$(this).addClass('current');
+		$("#"+tab_id).addClass('current');
+	})
+
+setInterval(function(){
+		$('.animateEle').fadeIn(2000).fadeOut(2000).fadeIn(2000)
+    }, 2000);
+   })
+</script>
+
+</body>
+</html>

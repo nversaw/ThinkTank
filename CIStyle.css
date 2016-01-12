@@ -1,0 +1,321 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #808080;
+}
+
+#MainWrap {
+	width: 100%;
+	margin: auto;
+}
+
+#MainHeader {
+	width: 100%;
+	background-color: #f0f0f0;
+	height: 61px;
+}
+
+#HomeBtn {
+	background-image:url('https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/CC/OpSupport/SiteAssets/Images/CI/HomeBtn.png');
+	width: 92px;
+	height: 61px;
+	background-repeat:no-repeat;
+	float: right;
+}
+
+#HomeBtn:hover {
+	background-image:url('https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/CC/OpSupport/SiteAssets/Images/CI/HomeBtn.png');
+	background-position: 0 -61px;
+	background-repeat:no-repeat;
+}
+
+#HeaderWrap {
+	width: 864px;
+	height: 61px;
+	margin: auto;
+}
+
+#SiteHeader {
+	float: left;
+}
+
+#DescriptionWrap {
+	width: 100%;
+	background-image:url('https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/CC/OpSupport/SiteAssets/Images/CI/RedGradient.png');
+	background-repeat: repeat-x;
+}
+
+#DescripSection {
+	background-image:url('https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/CC/OpSupport/SiteAssets/Images/CI/RedBckgrd.png');
+	width: 864px;
+	height: 149px;
+	margin: auto;
+}
+
+#DescripText {
+	padding: 35px;
+	font-family: "Trebuchet MS";
+	color: white;
+	line-height: 25px;
+	font-weight:normal;
+}
+
+#BtnWrap {
+	width: 100%;
+	background-image:url('https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/CC/OpSupport/SiteAssets/Images/CI/GrayGradientTop.png');
+	background-repeat: repeat-x;
+}
+
+#ViewSection {
+	width: 100%;
+	background-image:url('https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/CC/OpSupport/SiteAssets/Images/CI/GrayGradientTop.png');
+	background-repeat: repeat-x;
+	height: 104px;
+	border-top: 1px #EAEBEC solid;
+}
+
+#BtnSection {
+	width: 100%;
+	margin: auto;
+}
+
+#ViewWrap {
+	width: 760px;
+	height: 104px;
+	margin: auto;	
+}
+
+#Btns {
+	width: 760px;
+	height: 104px;
+	margin: auto;	
+}
+
+#BtnDescripWrap {
+	width: 100%;
+	background-color: white;
+	/*background-repeat: repeat-x;
+	background-color: #e3e3e3;*/
+}
+
+#BtnDescripBckgrd {
+	/*background-image: url('https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/CC/OpSupport/SiteAssets/Images/CI/GrayGradientMid.png');*/
+	width: 775px;
+	height: 170px;
+	margin: auto;
+}
+
+#BtnDescrip {
+	width: 530px;
+	height: 99px;
+	font-family:Arial, Helvetica, sans-serif;
+	color: #666666;
+	padding-top: 10px;
+	text-align: center;
+	font-size: medium;
+	line-height: 20px;
+	margin: auto;
+	padding-top: 10px;
+}
+
+.BtnStyle {
+	width: 138px;
+	height: 60px;
+	background-image:url('https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/CC/OpSupport/SiteAssets/Images/CI/RedBtnSprite.png');
+	float: left;	
+	margin-right: 15px;
+	margin-top: 12px;
+}
+
+.BtnStyle:hover {
+	background-image:url('https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/CC/OpSupport/SiteAssets/Images/CI/RedBtnSprite.png');
+	float: left;
+	background-position: 0 -78px;	
+}
+
+.BtnStyle2 {
+	width: 138px;
+	height: 53px;
+	background-image:url('https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/CC/OpSupport/SiteAssets/Images/CI/RedBtnSprite.png');
+	float: left;	
+	margin-right: 5px;
+	margin-top: 12px;
+}
+
+.BtnStyle2:hover {
+	background-image:url('https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/CC/OpSupport/SiteAssets/Images/CI/RedBtnSprite.png');
+	float: left;
+	background-position: 0 -78px;	
+}
+
+.BtnStyle3 {
+	width: 140px;
+	height: 59px;
+	background-image:url('https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/CC/OpSupport/SiteAssets/Images/CI/GrayBtnSprite.png');
+	float: left;	
+	margin-right: 10px;
+	margin-top: 12px;
+	padding-top: 18px;
+}
+
+.BtnStyle3:hover {
+	background-image:url('https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/CC/OpSupport/SiteAssets/Images/CI/GrayBtnSprite.png');
+	float: left;
+	background-position: 0 -77px;	
+}
+
+.BtnStyle4 {
+	width: 140px;
+	height: 49px;
+	background-image:url('https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/CC/OpSupport/SiteAssets/Images/CI/GrayBtnSprite.png');
+	float: left;	
+	margin-right: 10px;
+	margin-top: 12px;
+	padding-top: 28px;
+}
+
+.BtnStyle4:hover {
+	background-image:url('https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/CC/OpSupport/SiteAssets/Images/CI/GrayBtnSprite.png');
+	float: left;
+	background-position: 0 -77px;	
+}
+
+
+#InitiativeText {
+	padding-top: 10px;
+	background-color: aqua;
+	height: 76px;
+}
+
+#InitiativeBtn {
+	padding-top: 18px;
+}
+
+#ImprovementBtn {
+	padding-top: 18px;
+}
+
+#HelpBtn {
+	padding-top: 25px;
+}
+
+#ProjectBtn {
+	padding-top: 25px;
+}
+
+#BtmWrap {
+	width: 100%;
+}
+
+#BtmSection {
+	width: 864px;
+	height: 600px;
+	margin: auto;
+}
+
+#TopGrayBar {
+	width: 100%;
+	height: 10px;
+	background-color: #9a9a9a;
+}
+
+#CenterGraySection {
+	width: 800px;
+	margin: auto;
+	padding-top: 15px;		
+}
+
+#Column1 {
+	width: 510px;
+	margin: auto;
+	float: left;
+	padding-top: 15px;
+}
+
+#Column2 {
+	width: 206px;
+	height: 274px;
+	float: right;
+	padding-top: 30px;
+}
+
+.GryBtn {
+	width: 206px;
+	height: 51px;
+	background-image: url('https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/CC/OpSupport/SiteAssets/Images/CI/GrayBtn.png');	
+	float: left;
+	margin-bottom: 10px;
+	line-height: 51px;
+}
+
+.GryBtn:hover {
+	width: 206px;
+	height: 51px;
+	background-image: url('https://jcp.sharepoint.com/sites/SPOStdControllers/JCPSSC/CC/OpSupport/SiteAssets/Images/CI/GrayBtn.png');
+	background-position: 0 -51px;	
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	font-family: Calibri;
+}
+
+.tab-link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-color: #CCCCCC;
+}
+
+ul.tabs{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+ul.tabs li{
+	background: none;
+	color: #222;
+	display: inline-block;
+	padding: 10px 15px;
+	cursor: pointer;
+}
+
+ul.tabs li.current{
+	background: #ededed;
+	color: #222;
+}
+
+.tab-content{
+	display: none;
+	background: #ededed;
+	padding: 15px;
+}
+
+.tab-content.current{
+	display: inherit;
+}
+
+#cntrInitiativeTxt {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	padding: 15px;
+	line-height: 18px;
+	margin: auto;
+	width: 775px;
+}
+
+#themeLink {
+	color: navy;
+	font-size: 18px;
+}
+
+#themeImg {
+	padding-top:15px; 
+	margin: auto;
+	display: block;
+}

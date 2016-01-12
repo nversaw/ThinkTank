@@ -1,0 +1,2 @@
+Think Tank is a process improvement submission application used to submit ideas generated within an organization for workflow and implementation.  
+The site uses jQuery tabs to present embedded Excel webpart charts to show reporting which is gathered from the data submitted. 
